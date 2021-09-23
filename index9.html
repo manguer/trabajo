@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ejercisio</title>
+	<style >
+	.rt {
+		position: absolute;
+		height: 100px;
+		width: 750px;
+		background-color:#2FD3FB;
+		right: 340px;  
+		font-size: 35px;
+		font-family: helvetica;
+		text-align: center;
+		border: 5px black solid;
+		top: 15px;
+		}
+
+	.pd {
+		position: absolute;
+		height: 0px;
+		width: 0px;
+		background-color:#2FD3FB;
+		background: url(simon9.png);
+		background-repeat: no-repeat;
+		right: 120px;   
+		top: 220px;
+		
+	}
+	.we {
+		position: absolute;
+		height: 0px;
+		width: 0px;
+		background:#2FD3FB;
+		color: red;
+		text-align: center;
+		font-size: 0px;
+		right: 120px; 
+		top: 220px;
+		border: 5px black solid;
+	}
+	.de {
+		position: absolute;
+		height: 150px;
+		width: 150px;
+		background-color:#2FD3FB;
+		left: 120px;   
+		top: 220px;
+		border: 5px black solid;
+		font-family: helvetica;
+
+			}
+		#algo {
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			left: 270;
+		}
+		.wr {
+			position: absolute;
+		height: 150px;
+		width: 150px;
+		background-color:#2FD3FB;
+		left: 300px;   
+		top: 220px;
+		border: 0px black solid;
+		font-size: 0px;
+		font-family: helvetica;
+
+
+		}	
+
+	body {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color:#EAFCFE;
+	}
+	</style>
+
+</head>
+<body onmousemove="wewe()"> 
+	<script>  
+		x=0;
+		function lolo(){
+			setTimeout(trato,0);
+			x=x+1;
+		
+		}
+		function trato(){
+			op.style.width=750+"px";
+			op.style.height=500+"px";
+			if (x==1) {
+				setTimeout(rito,1000);
+				x=x-1;
+			}
+
+		}
+		
+		function rito(){
+			op.style.width=0+"px";
+			op.style.height=0+"px";
+	
+		} 
+		function wewe() 
+        {
+            x1=event.clientX;
+            y=event.clientY;
+            fr.innerHTML="<br><br><br><br><br><br>"+"ejeX="+x1+"  "+"ejeY="+y;
+        }
+        function tops(){
+        	fr.style.width=750+"px";
+        	fr.style.height=500+"px";
+        	fr.style.fontSize=20+"px";
+        	algo.style.width=150+"px";
+        	algo.style.height=150+"px";
+        	algo.style.fontSize=20+"px";
+        	algo.style.border=5+"px "+"black "+"solid";
+        }
+        function gote(){
+        	fr.style.width=0+"px";
+        	fr.style.height=0+"px";
+        	fr.style.fontSize=0+"px";
+        	algo.style.width=0+"px";
+        	algo.style.height=0+"px";
+        	algo.style.fontSize=0+"px";
+        	algo.style.border=0+"px "+"black "+"solid";
+
+
+        }
+     
+	</script> 
+
+	<div class="rt" onclick="lolo()">CENTRO EDUCATIVO NEOSISTEMAS</div>
+	<div class="pd" id="op" ></div>
+	<div class="we"id="fr"></div>
+	<div class="de" onclick="tops()">POSICIONES</div>
+	<div class="za" id="mn" onclick="fghj()"></div>
+	<div class="wr" id="algo" onclick="gote()">CERRAR</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
